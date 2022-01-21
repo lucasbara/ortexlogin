@@ -16,14 +16,6 @@ const Login = () => {
   // Websocket
   const [wsInfo, setWsInfo] = useState(null);
 
-  /*const parseData = (unix) => {
-    const dateFormat = new Date(unix);
-
-    return dateFormat;
-  };
-  
-   CURRENTLY TIME: {wsInfo && parseData(`${wsInfo.dt}`)}*/
-
   useEffect(() => {
     let isMounted = true;
     socket.onopen = () => {
@@ -127,6 +119,7 @@ const Login = () => {
           <p className={style.cotization}>
             EUR/USD {wsInfo && wsInfo.price}
             <br></br>
+            CURRENT TIME: {wsInfo && `${new Date(wsInfo.dt)}`}
           </p>
         </div>
       </div>

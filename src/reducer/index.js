@@ -1,5 +1,6 @@
 const initialState = {
   modalIsOpen: false,
+  time: null,
 };
 
 export const rootReducer = (state = initialState, action) => {
