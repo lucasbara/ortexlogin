@@ -1,0 +1,282 @@
+:root {
+  --main: #000115;
+  --secondary: #33afaa;
+}
+
+.bigContainer {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  /*background-color: var(--main);*/
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+}
+
+.bigContainer h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.formContainer {
+  width: 55%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 99;
+}
+
+.imgContainer {
+  width: 100%;
+  min-height: 15%;
+}
+
+.imgContainer img {
+  max-width: 12rem;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.orBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.formContainer__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 10%;
+}
+
+.formContainer__text p {
+  margin-bottom: 0;
+}
+
+form {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+form input {
+  all: unset;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.2em;
+  border-radius: 0.4rem;
+  background-color: #00020b;
+}
+
+form input:active {
+  background-color: #00020b;
+}
+
+form input:focus {
+  background-color: #00020b;
+}
+
+form label p {
+  padding-left: 0.5rem;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #00020b;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+input:-moz-autofill {
+  -moz-text-fill-color: #00020b;
+  -moz-box-shadow: 0 0 0px 1000px white inset;
+}
+input:-o-autofill {
+  -o-text-fill-color: #00020b;
+  -o-box-shadow: 0 0 0px 1000px white inset;
+}
+input:-khtml-autofill {
+  -khtml-text-fill-color: #00020b;
+  -khtml-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:focus:-webkit-autofill {
+  -webkit-text-fill-color: #00020b;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+input:focus:-moz-autofill {
+  -moz-text-fill-color: #00020b;
+  -moz-box-shadow: 0 0 0px 1000px white inset;
+}
+input:focus:-o-autofill {
+  -o-text-fill-color: #00020b;
+  -o-box-shadow: 0 0 0px 1000px white inset;
+}
+input:focus:-khtml-autofill {
+  -khtml-text-fill-color: #00020b;
+  -khtml-box-shadow: 0 0 0px 1000px white inset;
+}
+
+form input::placeholder {
+  padding-left: 0.5rem;
+}
+
+form input:-webkit-autofill:focus {
+  background-color: #00020b;
+}
+
+form label {
+  margin: 5rem;
+}
+
+.hideForm {
+  opacity: 0;
+}
+
+.greenText {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.greenText:hover {
+  cursor: pointer;
+}
+
+.btnLogIn {
+  all: unset;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(0, 152, 155, 1) 0.1%,
+    rgba(0, 94, 120, 1) 94.2%
+  );
+  font-weight: 700;
+  padding: 0.35em;
+  box-sizing: border-box;
+  margin-top: 3rem;
+}
+
+.btnLogIn:hover {
+  cursor: pointer;
+  background-color: var(--main);
+  background-image: none;
+  border: 0.15em solid var(--secondary);
+}
+
+.btnGoogle {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  border: 0.15em solid var(--secondary);
+  background-color: var(--main);
+  padding: 0.35em;
+  margin-top: 2rem;
+}
+
+.btnGoogle:hover {
+  cursor: pointer;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(0, 152, 155, 1) 0.1%,
+    rgba(0, 94, 120, 1) 94.2%
+  );
+  border: none;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.btnGoogle__icon {
+  font-size: 2rem;
+  padding-right: 0.2em;
+}
+
+.extraNav {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.aside {
+  height: 100%;
+  width: 60%;
+  background-image: url(../../assets/img/bg.jpg);
+  opacity: 1;
+  background-size: cover;
+  background-position-x: 30%;
+}
+
+.cotizationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cotization {
+  color: var(--secondary);
+  font-weight: 700;
+  opacity: 1 !important;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px) {
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgContainer img {
+    margin: 4rem 1.5rem 2rem 0;
+  }
+  .formContainer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110%;
+  }
+
+  .formContainer__text {
+    width: 80%;
+    margin: 1.5rem 0rem;
+  }
+
+  .formContainer h1 {
+    font-size: 3rem;
+  }
+
+  .aside {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .formContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 993px) {
+}
