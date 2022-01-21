@@ -1,6 +1,6 @@
 # Ortex Login - Technical Task
 
-Login made it for Ortex
+Login made for Ortex
 More information at: https://public.ortex.com/wp-content/uploads/2020/12/TechnicalTask.pdf
 
 ## How to run it?
