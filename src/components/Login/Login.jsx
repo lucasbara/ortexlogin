@@ -119,7 +119,7 @@ const Login = () => {
           <p className={style.cotization}>
             EUR/USD {wsInfo && wsInfo.price}
             <br></br>
-            CURRENT TIME: {wsInfo && `${new Date(wsInfo.dt)}`}
+            CURRENT TIME: {wsInfo && `${new Date(wsInfo.dt).toLocaleString()}`}
           </p>
         </div>
       </div>
